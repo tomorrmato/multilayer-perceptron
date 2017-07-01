@@ -3,7 +3,6 @@ the multilayer perceptron take iterations, initial learning_rate, hidden_layer_d
 
 example of one layer perceptron: 
 
-# single layer perceptron
 my_MLP = MLP_Classifier(X=train_data, iterations=800, learning_rate=0.005, hidden_layer_dim=[100], activation_functions=['ReLU'])
 my_MLP.fit(train_data[:,0:d], train_data[:,d].astype(int))
 my_MLP.predict(test_data[:,0:d], test_data[:,d].astype(int))
